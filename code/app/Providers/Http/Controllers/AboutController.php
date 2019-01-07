@@ -20,8 +20,8 @@ class AboutController extends Controller
   //-------------------------------------------------TENTANG KAMI--------------------------------------------------//
   //---------------------------------------------------------------------------------------------------------------//
   public function getPengurus($search,$page){
-    //DB::statement("set sql_mode=''");
-    //DB::statement("set global sql_mode=''");
+    DB::statement("set sql_mode=''");
+    DB::statement("set global sql_mode=''");
     $perpage = 10;
     $query=SusunanPengurus::select('pengurus_lpnu.*','m_jabatan.jabatan')
       ->leftJoin('m_jabatan','m_jabatan.id','=','pengurus_lpnu.fid_jabatan');

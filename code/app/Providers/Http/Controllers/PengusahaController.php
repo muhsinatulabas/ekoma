@@ -26,8 +26,8 @@ class PengusahaController extends Controller
 
     //Ambil Data Pengusaha
     public function getPengusaha($pc_lpnu,$level,$search,$page){
-      //DB::statement("set sql_mode=''");
-      //DB::statement("set global sql_mode=''");
+      DB::statement("set sql_mode=''");
+      DB::statement("set global sql_mode=''");
       $perpage = 12;
       $query=Pengusaha::select('pengusaha_nu.*','pc_lpnu.nama_cabang','m_level_pengusaha.level_pengusaha','m_level_pengusaha.color')
         ->leftJoin('m_level_pengusaha','m_level_pengusaha.id','pengusaha_nu.fid_level_pengusaha')

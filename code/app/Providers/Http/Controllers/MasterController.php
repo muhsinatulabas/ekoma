@@ -46,8 +46,8 @@ class MasterController extends Controller
 
   //Ambil Data User per Page
   public function getUser($search,$page){
-    //DB::statement("set sql_mode=''");
-    //DB::statement("set global sql_mode=''");
+    DB::statement("set sql_mode=''");
+    DB::statement("set global sql_mode=''");
     $perpage = 10;
     $query=User::select('m_user.*','m_hak_akses.hak_akses','pc_lpnu.nama_cabang')
       ->leftJoin('pc_lpnu','pc_lpnu.id','m_user.fid_pc_lpnu')

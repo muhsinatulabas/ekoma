@@ -53,8 +53,8 @@ class PostController extends Controller
 
   //Ambil Posting Data peh Halaman
   public function getPost($post,$kategori,$pc_lpnu,$search,$page){
-    //DB::statement("set sql_mode=''");
-    //DB::statement("set global sql_mode=''");
+    DB::statement("set sql_mode=''");
+    DB::statement("set global sql_mode=''");
     $perpage = 10;
     $query=MultiplePost::select('multiple_post.*','m_user.nama_lengkap','pc_lpnu.nama_cabang')
       ->join('m_user','m_user.id','multiple_post.fid_user')
