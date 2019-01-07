@@ -1,0 +1,233 @@
+/*-----------------------------------------------*/
+/* ----------------FORM AND BUTTON --------------*/
+/*-----------------------------------------------*/
+.btn-primary, .wizard > .actions a {
+  color: #fff;
+  background-color: #58c060;
+  border-color: #58c060;
+}
+.btn-primary:hover, .wizard > .actions a:hover {
+  color: #fff;
+  background-color: #469c57;
+  border-color: #469c57;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.wizard > .actions a:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active, .wizard > .actions a:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle, .wizard > .actions .show > a.dropdown-toggle {
+  color: #fff;
+  background-color: #469c56;
+  border-color: #469c56;
+}
+
+.form-control,
+.asColorPicker-input,
+.dataTables_wrapper select,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type=text],
+.jsgrid .jsgrid-table .jsgrid-filter-row select,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type=number],
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-search__field,
+.typeahead, .tt-query, .tt-hint {
+    border: 1px solid #cacaca;
+    font-family: "roboto-regular", sans-serif;
+    font-size: 1rem;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 18px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 5px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+.form-control:focus,
+.asColorPicker-input:focus,
+.dataTables_wrapper select:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row select:focus,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus,
+.select2-container--default .select2-selection--single:focus,
+.select2-container--default .select2-selection--single .select2-search__field:focus,
+.typeahead:focus, .tt-query:focus, .tt-hint:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #58c060;
+    outline: 0;
+    box-shadow:none;
+}
+
+.form-control{
+  border-radius: 0px
+}
+/* .form-control, .asColorPicker-input, .dataTables_wrapper select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead, .tt-query, .tt-hint {
+  border: 1px solid #cacaca;
+  font-family: "roboto-regular", sans-serif;
+  font-size: 0.75rem;
+  padding: 0.56rem 0.75rem;
+  line-height: 14px;
+} */
+
+/*--------------------------------------*/
+/* ----------------NAVBAR --------------*/
+/*--------------------------------------*/
+.sidebar .nav .nav-item.active > .nav-link {
+  background:#58c060;
+  color: #fff;
+  font-weight:bold
+}
+.navbar {
+  font-family: "roboto-medium", sans-serif;
+  background: linear-gradient(88deg, #3f8e53, #58c060);
+  transition: background 0.25s ease;
+  -webkit-transition: background 0.25s ease;
+  -moz-transition: background 0.25s ease;
+  -ms-transition: background 0.25s ease;
+}
+.navbar .navbar-brand-wrapper {
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+  background: #459a56;
+  width: 255px;
+  height: 58px;
+  text-align: left;
+}
+.navbar .navbar-brand-wrapper .navbar-brand img {
+    /* width: calc(255px - 130px); */
+    max-width: 100%;
+    height: 100px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+/*-------------------------------------------*/
+/* -------------------TABLE -----------------*/
+/*-------------------------------------------*/
+.table thead tr th{
+  background:#58c060;
+  color: #fff
+}
+
+/*-------------------------------------------*/
+/* ----------------PAGINATION ---------------*/
+/*-------------------------------------------*/
+.pagination .page-item.active .page-link,
+.jsgrid .jsgrid-pager .page-item.active .page-link,
+.jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button .page-link,
+.jsgrid .jsgrid-pager .active.jsgrid-pager-page .page-link,
+.pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item.active a,
+.jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button a,
+.pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .jsgrid-pager-page .page-item.active a,
+.jsgrid .jsgrid-pager .active.jsgrid-pager-page a,
+.pagination .page-item:hover .page-link, .jsgrid .jsgrid-pager .page-item:hover .page-link,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover .page-link,
+.jsgrid .jsgrid-pager .jsgrid-pager-page:hover .page-link,
+.pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:hover a,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover a,
+.pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:hover a,
+.jsgrid .jsgrid-pager .jsgrid-pager-page:hover a,
+.pagination .page-item:focus .page-link, .jsgrid .jsgrid-pager .page-item:focus .page-link,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus .page-link,
+.jsgrid .jsgrid-pager .jsgrid-pager-page:focus .page-link,
+.pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-nav-button a,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:focus a,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus a,
+.pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-page a,
+.jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:focus a,
+.jsgrid .jsgrid-pager .jsgrid-pager-page:focus a,
+.pagination .page-item:active .page-link, .jsgrid .jsgrid-pager .page-item:active .page-link,
+.jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:active .page-link, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active a,
+.pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-page:active a {
+  background: #58c060;
+  border-color: #58c060;
+  color: #ffffff;
+}
+
+.btn-table{
+  color:#58c060;
+  font-size: 20px;
+  font-weight: normal;
+  margin-right:5px
+}
+.btn-table:hover{
+  color: #49a133;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*-------------------------------------------*/
+/* -------------------MODAL -----------------*/
+/*-------------------------------------------*/
+.modal-body{
+  background: #fff
+}
+.modal .modal-dialog {
+  margin-top: 30px;
+}
+.modal-content {
+  border-radius:0px;
+}
+
+.breadcrumb{
+  position: relative;
+  height:100px;
+  background: #2f2f2f;
+  width: 100%;
+  border:none;
+  border-radius: 0px;
+  margin:0px;
+  color:#fff
+}
+
+.mce-branding-powered-by {
+  display: none;
+}
+.frame-image {
+  background-color:#eeeeee;
+  width: 100%;
+  padding-top: 65%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.frame-avatar {
+  background-color:#eeeeee;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.dropify-wrapper {
+  border: 2px dashed #cacaca;
+  border-radius: 0px;
+}
+
+.mce-tinymce.mce-panel, .mce-tinymce .mce-panel {
+  border-color: #cacaca;
+}
